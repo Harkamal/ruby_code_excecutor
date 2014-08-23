@@ -1,0 +1,71 @@
+.ace_scrollbar{
+	height: 600px !important;
+	/*background-color:#BF4649 !important;*/
+	width: 14px !important;
+	margin-right: 7px;
+	overflow: auto !important;
+}
+.my-code-area{
+	width: 70%;
+	overflow: auto;
+}
+.leftBar{
+	width: 25%;
+	float: left;
+}
+.rightBar{
+	width: 65%;
+	float: left;
+	padding-left: 145px;
+}
+
+.leftBar img{
+	width:510px;	
+}
+.tryRubyPage{
+	padding-left: 70px;
+	padding-top: 60px;
+	
+}
+body#staticLayout{
+	margin: 0;
+	padding: 0;
+	color: #9ac1e3;
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 13px;
+	line-height: 1.7em;
+	background-color: #081e30;
+	/*background-image: url(images/tooplate_body.jpg);*/
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+h1.tryRubyHead{
+	text-align: center;
+	color: white;
+	font-family: cursive;
+}
+.ace_scrollbar{
+	/*display: none !important;*/
+}
+.cmdButtons{
+	margin: 25px 397px 0px 0px;
+	clear: both;
+	float: right;
+	width: 60%;
+}
+.modelBoxLink{
+	display: none;
+}
+#error{
+	color: red;
+	font-size: 14px;
+}
+#success{
+	color: green;
+	font-size: 14px
+}
+.modal-title{
+	color: darkslategray;
+	font-size: 32px;
+	text-align: center;	
+}

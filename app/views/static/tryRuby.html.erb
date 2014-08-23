@@ -1,0 +1,16 @@
+<h1 class="tryRubyHead"> Try Your Ruby Script Online Here!</h1>
+
+<div class="leftBar">
+	<%= image_tag("/assets/ruby.png", alt: "Learn Ruby")%>
+</div>
+
+<div class="rightBar">
+	<%= render "script_form" %>
+</div>
+
+<%= render "script_output" %>
+
+<script>
+	$('.my-code-area').ace({ theme: 'twilight', lang: 'ruby' });
+	$('textarea').focus();
+</script>
