@@ -6,13 +6,18 @@ class StaticController < ApplicationController
 	
 	# execute ruby script code
 	def executeRubyScript
-	  begin
-	    return @data = "Please write the code you want to execute." if params[:rubyCode].blank?
-      create_and_execute_ruby_file
-		rescue Exception => ecd
-			logger.info "exception raise......."
-			@data = e.message
-		end
+    return export if params[:export]
+    if request.xhr?
+  	  begin
+  	    return @data = "Please write the code you want to execute." if params[:rubyCode].blank?
+        create_and_execute_ruby_file
+  		rescue Exception => ecd
+  			logger.info "exception raise......."
+  			@data = e.message
+  		end
+  	else
+  	  redirect_to root_path
+  	end
 	end
 	
 	def create_and_execute_ruby_file
@@ -26,5 +31,20 @@ class StaticController < ApplicationController
       return @data = "Syntax error, Provide correct Ruby syntax."
     end
     @data = `ruby cc.rb`
+	end
+
+	def export
+	  @content = get_content
+    send_data @content,
+      :type => 'application/vnd.ms-excel',
+      :disposition => "attachment; filename=script.rb"
+	end
+	
+	def get_content
+	  doc = "begin\n"
+    doc << " #{params[:exportCode]}" + "\n"
+    doc << "rescue Exception => e \n"
+    doc << ' puts  e.to_s'
+    doc << "\nend"
 	end
 end

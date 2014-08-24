@@ -26,7 +26,7 @@ $('form#rubyCodeForm').submit(function() {
 });
 
 $('.clearLink').live("click", function(){
-	editor = $('.my-code-area').ace();
-	editor.setValue("");
+	var decorator = $('.my-code-area').data('ace');
+	decorator.editor.ace.setValue("");
 	return false;
 });
