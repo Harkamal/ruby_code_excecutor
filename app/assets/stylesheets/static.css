@@ -10,21 +10,25 @@
 	overflow: auto;
 }
 .leftBar{
-	width: 25%;
+	width: 50%;
 	float: left;
 }
 .rightBar{
-	width: 65%;
-	float: left;
-	padding-left: 145px;
+	width: 50%;
+	float: right;
+	padding: 0px !important;
 }
-
+.ace_editor{
+	width: 100% !important;
+}
 .leftBar img{
-	width:510px;	
+	width:98%;
+	/*height: 485px;	*/
 }
 .tryRubyPage{
-	padding-left: 70px;
-	padding-top: 60px;
+	padding-left: 100px;
+	padding-right: 100px;
+	padding-top: 2px;
 	
 }
 body#staticLayout{

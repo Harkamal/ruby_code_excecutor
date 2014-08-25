@@ -1,5 +1,5 @@
 <%= form_tag('/executeRubyScript', remote: true, id: "rubyCodeForm") do %>
-	<%= text_area_tag "rubyCode", "#Write Ruby Code \n # Example - puts 'foo'\n", rows: "31", class: 'my-code-area' %>
+	<%= text_area_tag "rubyCode", "#Write Ruby Code \n # Example - puts 'foo'\n", rows: "43", class: 'my-code-area' %>
 	<div class="cmdButtons">
 		<span><%= submit_tag 'Execute Script', class: "executeBtn btn btn-success btn-large" %></span>
 		<span><%= link_to "Clear Editor", "#", class: "clearLink btn btn-info btn-large"%></span>
