@@ -28,7 +28,7 @@
 .tryRubyPage{
 	padding-left: 100px;
 	padding-right: 100px;
-	padding-top: 2px;
+	padding-top: 2hpx;
 	
 }
 body#staticLayout{
@@ -52,7 +52,7 @@ h1.tryRubyHead{
 	/*display: none !important;*/
 }
 .cmdButtons{
-	margin: 25px 397px 0px 0px;
+	margin: 10px 397px 0px 0px;
 	clear: both;
 	float: right;
 	width: 60%;
