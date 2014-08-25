@@ -20,10 +20,11 @@
 }
 .ace_editor{
 	width: 100% !important;
+	height: 635px !important;
 }
 .leftBar img{
 	width:98%;
-	/*height: 485px;	*/
+	height: 635px !important;
 }
 .tryRubyPage{
 	padding-left: 100px;
@@ -72,4 +73,9 @@ h1.tryRubyHead{
 	color: darkslategray;
 	font-size: 32px;
 	text-align: center;	
+}
+.exportForm{
+    float: right;
+    padding-top: 4px;
+    margin-right: 123px;
 }
