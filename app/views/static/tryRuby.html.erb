@@ -16,6 +16,10 @@
 <%= render "script_output" %>
 
 <script>
+	$('form#rubyCodeForm').submit(function() {
+		$("#executeBtn").prop('disabled',true);
+	});
+
 	$('.my-code-area').ace({ theme: 'twilight', lang: 'ruby' });
 	$('textarea').focus();
 </script>

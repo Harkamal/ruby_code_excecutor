@@ -21,10 +21,6 @@
 //= require jquery-ace.min
 //= require_tree .
 
-$('form#rubyCodeForm').submit(function() {
-	$(this).find("button[type='submit']").prop('disabled',true);
-});
-
 $('.clearLink').live("click", function(){
 	var decorator = $('.my-code-area').data('ace');
 	decorator.editor.ace.setValue("");
