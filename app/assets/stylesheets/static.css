@@ -42,14 +42,14 @@ body#staticLayout{
 	font-family: Tahoma, Geneva, sans-serif;
 	font-size: 13px;
 	line-height: 1.7em;
-	background-color: #081e30;
+	background-color: white	;
 	/*background-image: url(images/tooplate_body.jpg);*/
 	background-repeat: no-repeat;
 	background-position: top center;
 }
 h1.tryRubyHead{
 	text-align: center;
-	color: white;
+	color: #081e30;
 	font-family: cursive;
 }
 .ace_scrollbar{
